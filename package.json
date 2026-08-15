@@ -1,0 +1,20 @@
+{
+  "name": "fable-peer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local MCP bridge for persistent Fable peer sessions",
+  "scripts": {
+    "build": "esbuild ./scripts/server.mjs --bundle --platform=node --format=esm --target=node20 --outfile=./dist/server.mjs",
+    "pretest": "npm run build",
+    "test": "node --test",
+    "start": "node ./dist/server.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.0.0",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

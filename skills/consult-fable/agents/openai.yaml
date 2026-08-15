@@ -1,0 +1,10 @@
+interface:
+  display_name: "Consult Fable"
+  short_description: "Ask Fable for an independent second opinion"
+  default_prompt: "Use $consult-fable to get an independent perspective on this question."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "fable-peer"
+      description: "Local read-only bridge to persistent Claude Code Fable sessions"

@@ -1,0 +1,26 @@
+{
+  "name": "fable-peer",
+  "version": "0.1.0+codex.20260815233400",
+  "description": "Consult a persistent, read-only Claude Code Fable peer from Codex.",
+  "author": {
+    "name": "Tynan Daly"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Fable Peer",
+    "shortDescription": "Ask Fable for an independent perspective.",
+    "longDescription": "Adds persistent, read-only Fable peer sessions for independent answers, critique, collaboration, adversarial analysis, and code review.",
+    "developerName": "Tynan Daly",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Ask Fable for an independent perspective.",
+      "Have Fable challenge this design.",
+      "Continue my current Fable discussion."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

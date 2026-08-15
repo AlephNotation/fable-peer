@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "fable-peer": {
+      "cwd": ".",
+      "command": "node",
+      "args": ["./dist/server.mjs"]
+    }
+  }
+}
